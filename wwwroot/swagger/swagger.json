@@ -1,0 +1,62 @@
+﻿{
+  "x-generator": "NSwag v11.19.1.0 (NJsonSchema v9.10.72.0 (Newtonsoft.Json v11.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Erin API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/SampleData/WeatherForecasts": {
+      "get": {
+        "tags": [
+          "SampleData"
+        ],
+        "operationId": "SampleData_WeatherForecasts",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WeatherForecast": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "temperatureC",
+          "temperatureF"
+        ],
+        "properties": {
+          "dateFormatted": {
+            "type": "string"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}
