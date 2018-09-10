@@ -23,4 +23,4 @@ Follow these steps to get your development environment set up:
      ```
      dotnet run
      ```
-   5. Finally, launch [http://localhost:5001/swagger/]() in your browser to view the Swagger UI for the Northwind API.
+   5. Finally, launch [http://localhost:5001/swagger/]() in your browser to view the Swagger UI for the ErinSpa API.
